@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Magnum AI Assistant</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MAIN APP
+    ========================================== -->
+
+    <main class="magnum-app">
+
+
+        <!-- Background glow -->
+
+        <div class="background-glow glow-one"></div>
+
+        <div class="background-glow glow-two"></div>
+
+        <div class="background-glow glow-three"></div>
+
+
+
+        <!-- =====================================
+             TOP BRANDING
+        ====================================== -->
+
+        <header class="brand">
+
+            <div class="brand-logo">
+                M
+            </div>
+
+            <div class="brand-name">
+                MAGNUM
+            </div>
+            <button class="logout-button" id="logoutButton">Logout</button>
+
+        </header>
+
+
+
+        <!-- =====================================
+             DESIGNER CREDIT
+        ====================================== -->
+
+        <div class="designer-credit">
+
+            <div class="designed-by">
+                Designed by
+            </div>
+
+            <div class="designer-name">
+                Aadi Bhardwaj
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             CENTER CONTENT
+        ====================================== -->
+
+        <section class="assistant-area">
+
+
+            <!-- Status -->
+
+            <div class="assistant-status">
+
+                <span class="status-dot"></span>
+
+                <span id="statusText">
+                    READY
+                </span>
+
+            </div>
+
+
+
+            <!-- Waveform -->
+
+            <div
+                class="waveform"
+                id="waveform"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+
+            <!-- Listening / Thinking -->
+
+            <div
+                class="assistant-state"
+                id="assistantState"
+            >
+                I'm ready
+            </div>
+
+
+
+            <!-- User Question -->
+
+            <div
+                class="user-question"
+                id="userQuestion"
+            >
+                What would you like to know?
+            </div>
+
+
+
+            <!-- Magnum Answer -->
+
+            <div
+                class="magnum-answer"
+                id="magnumAnswer"
+            >
+                I'm here whenever you need me.
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             RIGHT INFORMATION PANEL
+        ====================================== -->
+
+        <aside class="right-panel">
+
+
+            <!-- Web Search Card -->
+
+            <div class="info-card">
+
+                <div class="card-label">
+                    WEB SEARCH
+                </div>
+
+
+                <div class="card-status">
+
+                    <span
+                        class="connection-dot"
+                        id="webStatusDot"
+                    ></span>
+
+                    <span id="webStatus">
+                        Connected
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="search-message"
+                    id="searchMessage"
+                >
+                    Ready to search the web
+                </div>
+
+            </div>
+
+
+
+            <!-- Current Source Card -->
+
+            <div class="info-card">
+
+                <div class="card-label">
+                    CURRENT SOURCE
+                </div>
+
+
+                <div
+                    class="source-name"
+                    id="sourceName"
+                >
+                    No source
+                </div>
+
+
+                <div
+                    class="source-url"
+                    id="sourceUrl"
+                >
+                    —
+                </div>
+
+            </div>
+
+
+
+            <!-- Recent Searches -->
+
+            <div class="info-card recent-card">
+
+                <div class="card-label">
+                    RECENT SEARCHES
+                </div>
+
+
+                <div
+                    class="recent-searches"
+                    id="recentSearches"
+                >
+
+                    <div class="empty-search">
+                        No recent searches
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================
+             BOTTOM CONTROLS
+        ====================================== -->
+
+        <div class="controls">
+
+
+            <!-- Keyboard Button -->
+
+            <button
+                class="control-button"
+                id="keyboardButton"
+                title="Keyboard"
+            >
+
+                <span class="keyboard-icon">
+                    ⌨
+                </span>
+
+            </button>
+
+
+
+            <!-- Main Microphone -->
+
+            <button
+                class="microphone-button"
+                id="microphoneButton"
+                title="Start listening"
+            >
+
+                <span class="microphone-icon">
+                    🎙
+                </span>
+
+            </button>
+
+
+
+            <!-- Stop Button -->
+
+            <button
+                class="control-button stop-button"
+                id="stopButton"
+                title="Stop"
+            >
+
+                <span>
+                    ×
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             TEXT INPUT
+        ====================================== -->
+
+        <div
+            class="text-input-container"
+            id="textInputContainer"
+        >
+
+            <input
+                type="text"
+                id="textInput"
+                placeholder="Ask Magnum anything..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="sendButton"
+                title="Send"
+            >
+                ➤
+            </button>
+
+        </div>
+
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="footer">
+
+            <span>
+                MAGNUM AI
+            </span>
+
+            <span class="footer-separator">
+                •
+            </span>
+
+            <span>
+                WEB CONNECTED
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

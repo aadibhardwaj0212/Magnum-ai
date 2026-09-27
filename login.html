@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAGNUM AI - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Top Branding -->
+    <header class="top-bar">
+
+        <div class="brand">
+            <div class="brand-icon">M</div>
+            <span>MAGNUM</span>
+        </div>
+
+        <div class="designer">
+            <small>DESIGNED BY</small>
+            <strong>Aadi Bhardwaj</strong>
+        </div>
+
+    </header>
+
+
+    <!-- Login Container -->
+    <main class="login-wrapper">
+
+        <div class="login-card">
+
+            <!-- Logo -->
+            <div class="login-logo">
+                M
+            </div>
+
+            <h1>Welcome Back</h1>
+
+            <p class="subtitle">
+                Login to continue to MAGNUM AI
+            </p>
+
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="input-group">
+
+                    <label for="email">Email Address</label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                    <p class="error-message" id="emailError"></p>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <div class="label-row">
+
+                        <label for="password">Password</label>
+
+                        <a href="forgot-password.html">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-button"
+                            id="togglePassword"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <p class="error-message" id="passwordError"></p>
+
+                </div>
+
+
+                <!-- General Error -->
+                <div
+                    class="login-error"
+                    id="loginError"
+                ></div>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="login-button"
+                    id="loginButton"
+                >
+                    <span id="buttonText">LOGIN</span>
+
+                    <span
+                        class="loader"
+                        id="loader"
+                    ></span>
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+
+            <!-- Signup -->
+            <p class="signup-text">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Create Account
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- Bottom -->
+    <footer>
+
+        <span>MAGNUM AI</span>
+
+        <span>•</span>
+
+        <span>SECURE ACCESS</span>
+
+    </footer>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

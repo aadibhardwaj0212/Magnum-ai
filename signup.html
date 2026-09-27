@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAGNUM AI - Create Account</title>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <header class="top-bar">
+
+        <div class="brand">
+            <div class="brand-icon">M</div>
+            <span>MAGNUM</span>
+        </div>
+
+        <div class="designer">
+            <small>DESIGNED BY</small>
+            <strong>Aadi Bhardwaj</strong>
+        </div>
+
+    </header>
+
+
+    <main class="signup-wrapper">
+
+        <div class="signup-card">
+
+            <div class="signup-logo">
+                M
+            </div>
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Create your MAGNUM AI account
+            </p>
+
+
+            <form id="signupForm">
+
+                <div class="input-group">
+
+                    <label for="name">Full Name</label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">👤</span>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+                    <p class="error-message" id="nameError"></p>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">Email Address</label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                    <p class="error-message" id="emailError"></p>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">Password</label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-button"
+                            id="togglePassword"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <p class="error-message" id="passwordError"></p>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye-button"
+                            id="toggleConfirmPassword"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                    <p class="error-message" id="confirmPasswordError"></p>
+
+                </div>
+
+
+                <div
+                    class="signup-error"
+                    id="signupError"
+                ></div>
+
+
+                <button
+                    type="submit"
+                    class="signup-button"
+                    id="signupButton"
+                >
+
+                    <span id="buttonText">
+                        CREATE ACCOUNT
+                    </span>
+
+                    <span
+                        class="loader"
+                        id="loader"
+                    ></span>
+
+                </button>
+
+            </form>
+
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+
+            <p class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <span>MAGNUM AI</span>
+
+        <span>•</span>
+
+        <span>SECURE ACCESS</span>
+
+    </footer>
+
+
+    <script src="signup.js"></script>
+
+</body>
+
+</html>
